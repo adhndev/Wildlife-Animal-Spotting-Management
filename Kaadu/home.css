@@ -1,0 +1,27 @@
+#texts{
+    text-align: left;
+    margin: 0px 15px;
+}
+.carousel-inner > .item > img {
+
+    width: 80%;
+    margin: auto;
+}
+.page-hf{
+    background-color: #98fb98;
+    text-align: center;
+}
+.page-hf1{
+    background-color: #98fb98;
+    text-align: center;
+    margin-top: 10px;
+}
+#heading{
+    margin: 0px 10px;
+}
+#links{
+    background-color:#98fb98;
+}
+#contact{
+	margin-right: 5px;
+}

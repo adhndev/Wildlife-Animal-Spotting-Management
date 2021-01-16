@@ -1,0 +1,208 @@
+-- MySQL dump 10.13  Distrib 8.0.21, for Win64 (x86_64)
+--
+-- Host: localhost    Database: kaadu
+-- ------------------------------------------------------
+-- Server version	8.0.21
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `admin`
+--
+
+DROP TABLE IF EXISTS `admin`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `admin` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `admin`
+--
+
+LOCK TABLES `admin` WRITE;
+/*!40000 ALTER TABLE `admin` DISABLE KEYS */;
+INSERT INTO `admin` VALUES (1,'Adhnan','$2y$10$oYYEZHyr76hbjjMqBO19/OqBXrNzulIRy3teDi/nI9jfecyPsIbPG','2020-12-23 14:48:50'),(2,'Aniruddh','$2y$10$FY7vA4y0H.UBdtSAXSQjaOWSh1HejtHh3CQgC3Jb.hMEWM1A5qxta','2020-12-23 14:52:55'),(3,'admin','$2y$10$PSZ3b.YORVAi7PSRoE5AWejhPFovFCXm4reX34VcQWfofkChdSmw.','2020-12-23 14:53:28');
+/*!40000 ALTER TABLE `admin` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `animalview`
+--
+
+DROP TABLE IF EXISTS `animalview`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `animalview` (
+  `SPECIES` varchar(50) DEFAULT NULL,
+  `COUNT` int DEFAULT NULL,
+  `LOCATION` varchar(50) DEFAULT NULL,
+  `DATE` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `animalview`
+--
+
+LOCK TABLES `animalview` WRITE;
+/*!40000 ALTER TABLE `animalview` DISABLE KEYS */;
+INSERT INTO `animalview` VALUES ('Tiger',1,'Tiger Tank','2020-12-21'),('Tiger',3,'Hosakere','2020-12-21'),('Leopard',1,'Kymara','2020-12-21'),('Black Panther',1,'Barballe','2020-12-21'),('Elephants',6,'Back Waters','2020-12-21'),('Tiger',1,'Bangalore','2020-12-04'),('Elephannt',3,'Akash room','2020-12-23'),('Tiger',1,'Bangalore','2020-12-25'),('Tiger',1,'Bangalore','2020-12-09'),('Tiger',1,'Bangalore','2020-12-03'),('Tiger',1,'Bangalore','2020-12-03'),('Tiger',1,'Bangalore','2020-12-24'),('black panther',1,'kymara junction','2020-12-25');
+/*!40000 ALTER TABLE `animalview` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `booking`
+--
+
+DROP TABLE IF EXISTS `booking`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `booking` (
+  `name` varchar(50) DEFAULT NULL,
+  `count` int DEFAULT NULL,
+  `room` varchar(20) DEFAULT NULL,
+  `nights` int DEFAULT NULL,
+  `date` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `booking`
+--
+
+LOCK TABLES `booking` WRITE;
+/*!40000 ALTER TABLE `booking` DISABLE KEYS */;
+INSERT INTO `booking` VALUES ('as',1,'1',1,'2020-05-05'),('asss',1,'1',1,'2020-12-21'),('assss',1,'des',1,'2020-02-02'),('asd',1,'Maharaja Bunglow',1,'2020-12-02'),('asd',1,'Maharaja Bunglow',1,'2020-12-02'),('1',1,'',1,'2020-12-02'),('1',1,'Maharaja Bunglow',1,'2020-12-14'),('1',1,'Maharaja Bunglow',1,'2020-12-14'),('1',1,'Tented Cottage',1,'2020-12-03'),('1',1,'Tented Cottage',1,'2020-12-03'),('as',1,'Tented Cottage',1,'2020-12-25'),('MUHAMMED RIBU K',3,'Tented Cottage',3,'2021-01-01'),('Adhnan Manzis',3,'Maharaja Bunglow',3,'2020-09-23'),('as',1,'Maharaja Bunglow',1,'2020-12-04'),('bvgj',66,'Tented Cottage',565,'2021-01-02'),('MANJUNATH',2,'Maharaja Bunglow',1,'2020-12-25'),('Adhnan Manzis',1,'Maharaja Bunglow',3,'2020-12-25'),('Adhnan Manzis',1,'Maharaja Bunglow',3,'2020-12-25'),('Adhnan Manzis',1,'Maharaja Bunglow',3,'2020-12-25'),('Adhnan Manzis',1,'Maharaja Bunglow',3,'2020-12-25'),('Adhnan Manzis',1,'Maharaja Bunglow',3,'2020-12-25'),('Adhnan Manzis',1,'Maharaja Bunglow',3,'2020-12-25'),('adhnan',5,'Maharaja Bunglow',8,'2020-12-24'),('adhnan',5,'Maharaja Bunglow',8,'2020-12-24'),('adhnan',5,'Maharaja Bunglow',8,'2020-12-24'),('as',1,'',1,'2020-12-26'),('Adhnan Manzis',1,'',3,'2020-12-26'),('Sanaullah',2,'Maharaja Bunglow',69,'2020-12-31');
+/*!40000 ALTER TABLE `booking` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `naturalist`
+--
+
+DROP TABLE IF EXISTS `naturalist`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `naturalist` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `naturalist`
+--
+
+LOCK TABLES `naturalist` WRITE;
+/*!40000 ALTER TABLE `naturalist` DISABLE KEYS */;
+INSERT INTO `naturalist` VALUES (2,'aniruddh','$2y$10$WbCyjIZAkPRigq41isBKkOCNU06Pq8wHvp/wSAZancYDzl/H1L5Ve','2020-12-23 12:32:17'),(5,'naturalist','$2y$10$sJXxW/DRgesaUZWI3wT0puS76oy2P2Rei9XIfR.2BnItYzmEvsc.S','2020-12-25 15:51:54');
+/*!40000 ALTER TABLE `naturalist` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `persons`
+--
+
+DROP TABLE IF EXISTS `persons`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `persons` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `birth_date` date DEFAULT NULL,
+  `phone` varchar(15) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `phone` (`phone`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `persons`
+--
+
+LOCK TABLES `persons` WRITE;
+/*!40000 ALTER TABLE `persons` DISABLE KEYS */;
+/*!40000 ALTER TABLE `persons` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `review`
+--
+
+DROP TABLE IF EXISTS `review`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `review` (
+  `user` varchar(20) DEFAULT NULL,
+  `review` varchar(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `review`
+--
+
+LOCK TABLES `review` WRITE;
+/*!40000 ALTER TABLE `review` DISABLE KEYS */;
+INSERT INTO `review` VALUES ('ani','shjhbajbs asjABDJBHAS DHbajsbdjahb'),('ani','shjhbajbs asjABDJBHAS DHbajsbdjahb'),('MANJUNATH','NICE'),('Adhnan Manzis','HI IT WAS AWESOME EXPERIENCE'),('Adhnan Manzis','HI IT WAS AWESOME EXPERIENCE'),('Adhnan Manzis','HI IT WAS AWESOME EXPERIENCE'),('ron','Very bouncy bed\r\n');
+/*!40000 ALTER TABLE `review` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (2,'adhnan','$2y$10$A6yjalyiPqPdu3zoyG/iGOtdQKg4RELCfJSgn9s7W63xA1.3vjkEu','2020-12-20 09:33:04'),(3,'aniruddh','$2y$10$aHkB4Wh6LadxjbkdAz2vg.QodMXpB/puivEzac3lMfGXJOkVtnnU2','2020-12-20 09:54:25');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2020-12-31 22:36:06

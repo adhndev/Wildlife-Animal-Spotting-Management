@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kaadu</title>
+        <link rel="stylesheet" href="home.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1">    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <style>body{background: #98fb98;}</style>
+    <body>
+        <div class="page-hf">
+            <div class="navigation navbar-fixed-top" id="links">
+                <ul class="nav nav-tabs navbar-collapse">
+                    <li class="active"><a href="#welcome" data-toggle="tab"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li><a href="#tourist" data-toggle="tab"><span class="glyphicon glyphicon-sunglasses"></span> Tourist Login </a></li>
+                    <li><a href="#naturalist" data-toggle="tab"><span class="glyphicon glyphicon-leaf"></span> Naturalist Login</a></li>
+                    <li class="nav navbar-right"><a href="#contact" data-toggle="tab"><span class="glyphicon glyphicon-earphone"></span> Contact Us </a></li>
+                    <li class="nav navbar-right"><a href="#admin" data-toggle="tab"><span class="glyphicon glyphicon-lock"></span> Admin Login </a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="container" align="center">            
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="welcome">
+                    <hr><br><br>
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel" data-slide-to="1" ></li>
+                          <li data-target="#carousel" data-slide-to="2"></li>
+                          <li data-target="#carousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                    
+                            <div class="item active">
+                                <img src="home1.jpg" width="450px" height="340px">
+                            </div>
+                    
+                            <div class="item">
+                                <img src="lleoani.jpg" width="450px" height="340px">
+                            </div>
+                        
+                            <div class="item">
+                                <img src="aniwd.jpg" width="450px" height="340px">
+                            </div>
+                    
+                            <div class="item">
+                                <img src="aniwwood.jpg" width="450px" height="340px">
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        </a>
+                      </div>
+                      
+                    <div id="texts">
+                        <center>    
+                        <h3>
+                            About the Nagarahole Tiger Reserve
+                        </h3>
+                        <p class="para">
+                            &emsp; Nagarahole Tiger Reserve previously known as Rajiv Gandhi (Nagarahole) National Park, was named after the river 'Nagarahole' which literally means 'Serpent River' (Nagara=Serpent; Hole=River) in Kannada language. Nagarahole tiger reserve forms a critical connecting habitat for tigers and elephants to other areas of Western Ghats through Brahmagiri wildlife sanctuary and to the Eastern Ghats through Bandipur Tiger reserve.
+                        </p>
+                        <h3>
+                            Kabini Safari Lodge
+                        </h3>
+                        <p class="para">
+                            &emsp; Located by the banks of the River Kabini, this 54-acre property spells idyllic charms and countless pleasant surprises. The former hunting lodge that’s been converted, speak of erstwhile elegance and comes with comforts like charming accommodation, a well-stocked bar and even a fully-equipped conference room for those meetings that spell business as unusual. For those who seek rejuvenation in the truest sense, we also offer ayurvedic treatments.
+
+                            The wild has its charms and traditions. Here you’re not a tourist, but an explorer; an adventurer. Meals, being a opportunity for explorers to share their stories and wild rendezvous, are group affairs. That’s why the Gol Ghar, our river-facing gazebo dining area serves meals at set times. The buffet serves Indian, Continental and Chinese cuisine.
+                            
+                            A morning and evening jeep safari or even a boat ride down the River Kabini rewards you with sightings of herds of elephants, crocodiles sunning themselves and many hued birds flitting in and out of the forest’s green canopy. For a touch of rustic, opt for the traditional coracle, made from bamboo and buffalo hide or go for the regular motorboat. Unwind with a wildlife movie in the audio-visual hall and then bring the day to a grand close with barbecue by a campfire
+                        </p>
+                        <p class="para">
+                            &emsp; The River Kabini Lodge is a great place to visit any time of the year. But during the sweltering months of March, April and May, the pools and springs in the forest dry up, bringing the animals to the banks of the River Kabini. Here you get to see the largest congregation of Asiatic Elephants in the wild. The monsoons (July, August and September) has the trees lush and thick, but promise fewer animal sightings. The other months promise a fair chance of animal and bird sightings.
+                        </p>
+                       </center>
+                    </div>
+                    <div>
+                        <br>
+                        <h3 class="text-danger">ANIMALS THAT YOU CAN SIGHT:</h3>
+                        <br>
+                        <ul class="list-group">
+                            <li class="list-group-item">THE ROYAL BENGAL TIGER</li>
+                            <li class="list-group-item">ASIATIC ELEPHANT</li>
+                            <li class="list-group-item">INDIAN PEACOCK</li>
+                            <li class="list-group-item">LEOPARDS, INCLUDING THE BLACK PANTHER</li>
+                            <li class="list-group-item">DIFFERENT KINDS OF DEER, AND MANY OTHER SPECIES</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="naturalist">
+                    <hr><hr>
+                    <center><h1 class="page-heading">Naturalist Login</h1></center>
+                    <hr>
+                    <form action="loginnaturalist.php" method="POST" class="form-horizontal" role="form">
+                        <hr>
+                        <div class="btn form-group">
+                            <button class="btn btn-primary" type="submit" style="margin-bottom: 35px;">Naturalist Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="tourist">
+                    <hr><hr>
+                    <h1 class="page-heading">Login into Kaadu</h1>
+                    <hr>
+                    <form action="login.php" class="form-horizontal" role="form">
+                            
+                    <div>
+                        
+                    </div>
+        
+                        <div class="btn form-group">
+                        <button class="btn btn-primary" type="login" style="margin-bottom: 50px;">Tourist Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="contact">
+                    <br><br><br><br>
+                    <h3 class="text">Created by:</h3>
+                    <hr><br>
+                    <table class="table table-hover">
+    
+                        <thead>
+                          <tr>
+                            <th>USN</th>
+                            <th>NAME</th>
+                            <th>EMAIL</th>
+                          </tr>
+                        </thead>
+                        
+                        <tbody>
+                          <tr>
+                            <td>1AT18CS004</td>
+                            <td>Adhnan Manzis</td>
+                            <td>adhnuabhi2000@gmail.com</td>
+                          </tr>
+                          <tr>
+                            <td>1AT18CS013</td>
+                            <td>Aniruddh GS</td>
+                            <td>anigs007@gmail.com</td>
+                          </tr>
+                        </tbody>
+                        
+                      </table>
+                    <br><br><br><br><br><br>
+                </div>
+                <div class="tab-pane fade" id="admin">
+                    <hr><hr>
+                    <h1>ADMIN LOGIN </h1>
+                    <hr>
+                    <form action="loginadmin.php" method="POST" class="form-horizontal" role="form">
+                       
+                       
+                        <hr>
+                        <div class="btn form-group">
+                            <button class="btn btn-danger" type="submit" style="margin-bottom: 35px;">ADMIN LOGIN</button>
+                        
+                        </div> 
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="page-hf1" align="center">
+            <br><br>
+            <h4>
+                For More details refer 
+                <a href="https://join.wwfindia.org/?source=CI-google_paid&utm_source=google&utm_campaign=BrandSearch&utm_medium=cpc&gclid=Cj0KCQiA5vb-BRCRARIsAJBKc6JCWKoP3t4j_8IT8FITeLxxwqe_64V_MGv80pQTzkokN7jhD4RBj3YaAu6mEALw_wcB">
+                    <mark>
+                       WORLD WILDLIFE FUND
+                    </mark>
+                </a>.
+            </h4>
+            <br>
+            <div id="copyright">
+                <span>&copy; Copyright 2020</span>
+            </div>
+            <br><br>
+        </div>  
+    </body>
+</html>
