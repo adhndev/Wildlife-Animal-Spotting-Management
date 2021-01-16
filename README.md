@@ -8,3 +8,4 @@ This project uses ports 80 and 443. MySQL was used to create the database.
 There a few mail triggers in this code u can change it to your mail system by editing sendmail from your XAMPP files and set to your preferred mail server and sender mail ID.
 I would recommend following these steps https://youtu.be/4_NP_WYFmIM
 
+The images used in home page of this project has been copyrighted by the photographer. For any further requests on images please dm @aniruddh.gs on instagram and please do follow me @crazii__manzii__007
